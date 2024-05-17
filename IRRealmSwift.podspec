@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "IRRealmSwift"
-  spec.version      = "10.47.0"
+  spec.version      = "10.50.0"
   spec.summary      = "RealmSwift framework built from official repository as xcframework to fix integration" 
   spec.static_framework = true;
   spec.description  = <<-DESC
