@@ -485,12 +485,15 @@ SWIFT_CLASS_NAMED("ObjectId")
 
 
 
+
 @class RLMProperty;
 
 @interface RLMObjectBase (SWIFT_EXTENSION(RealmSwift))
 /// Allow client code to generate properties (ie. via Swift Macros)
 + (NSArray<RLMProperty *> * _Nullable)_customRealmProperties SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -556,6 +559,7 @@ SWIFT_CLASS_NAMED("ObjectId")
 
 
 
+
 @interface RealmSwiftEmbeddedObject (SWIFT_EXTENSION(RealmSwift))
 /// :nodoc:
 + (BOOL)isEmbedded SWIFT_WARN_UNUSED_RESULT;
@@ -608,6 +612,7 @@ SWIFT_CLASS_NAMED("ObjectId")
 - (id _Nullable)objectForKeyedSubscript:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (void)setObject:(id _Nullable)newValue forKeyedSubscript:(NSString * _Nonnull)key;
 @end
+
 
 
 
